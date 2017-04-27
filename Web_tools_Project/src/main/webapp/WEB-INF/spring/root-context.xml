@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="bank" class="com.demonetization.pojo.Bank" ></bean>
+	<bean id="user" class="com.demonetization.pojo.User" ></bean>
+	<bean id="notes" class="com.demonetization.pojo.Notes"></bean>
+	<bean id="person" class="com.demonetization.pojo.Person"></bean>
+	<bean id="reservation" class="com.demonetization.pojo.Reservation" />
+	<bean id="reservationDetails" class="com.demonetization.pojo.ReservationDetails"></bean>
+	
+	
+	<bean id="bankDAO" class="com.demonetization.dao.BankDAO" ></bean>
+	<bean id="userDAO" class="com.demonetization.dao.UserDAO" ></bean>
+	<bean id="notesDAO" class="com.demonetization.dao.NotesDAO"></bean>
+	<bean id="personDAO" class="com.demonetization.dao.PersonDAO"></bean>
+	<bean id="reservationDAO" class="com.demonetization.dao.ReservationDAO"></bean>
+	<bean id="reservationDetailsDAO" class="com.demonetization.dao.ReservationDetailsDAO"></bean>
+	
+</beans>
